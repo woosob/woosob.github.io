@@ -15,7 +15,8 @@
 override: false
 
 # ---------------------------------------------------------------
-# Site Information Settings
+# Site Information Settings 
+# 网站信息设置
 # ---------------------------------------------------------------
 
 # To get or check favicons visit: https://realfavicongenerator.net
@@ -26,6 +27,7 @@ override: false
 
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
+# 网站图标
 favicon:
   small: /images/favicon-16x16-next.png
   medium: /images/favicon-32x32-next.png
@@ -35,7 +37,8 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+# 设置默认关键字（使用逗号分隔）
+keywords: "WooSob Blog , WooSob"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -93,10 +96,10 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
+  #about: /about/ || user
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -111,8 +114,8 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
+#scheme: Muse
+scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
 
@@ -126,9 +129,9 @@ scheme: Muse
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+social:
+  GitHub: https://github.com/woosob || github
+  E-Mail: mailto:yourname@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -154,7 +157,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: /images/avatar.gif
 
 # Table Of Contents in the Sidebar
 toc:
@@ -174,18 +177,18 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right (only for Pisces | Gemini).
-  position: left
-  #position: right
+  #position: left
+  position: right
 
   # Sidebar Display, available value (only for Muse | Mist):
   #  - post    expand on posts automatically. Default.
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
+  #display: post
   #display: always
   #display: hide
-  #display: remove
+  display: remove
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
@@ -194,10 +197,10 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
-  onmobile: false
+  onmobile: true
 
 
 # ---------------------------------------------------------------
@@ -216,7 +219,7 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 # Post meta display settings
@@ -230,9 +233,12 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
+  #字数统计
+  wordcount: true
+  #预览时间
   min2read: false
-  totalcount: false
+  #总字数,显示在页面底部
+  totalcount: true
   separated_meta: true
 
 # Wechat Subscriber
@@ -256,6 +262,7 @@ post_copyright:
 
 # ---------------------------------------------------------------
 # Misc Theme Settings
+# 其他主题设置
 # ---------------------------------------------------------------
 
 # Reduce padding / margin indents on devices with narrow width.
@@ -277,7 +284,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night eighties
 
 
 # ---------------------------------------------------------------
@@ -338,6 +345,7 @@ font:
 
 # ---------------------------------------------------------------
 # Third Party Services Settings
+# 第三方服务设置
 # ---------------------------------------------------------------
 
 # MathJax Support
@@ -378,14 +386,14 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  enable: true
+  appid:  pyGcvwqSp7YtVs7FK4k41Y8R-gzGzoHsz
+  appkey:  QK4xxFpPAMN7LNfzYVrz9t36
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
-  avatar: mm # gravatar style
-  guest_info: nick,mail,link # custom comment header
+  placeholder: ヾﾉ≧∀≦)o 来啊，快活啊! # comment box placeholder
+  avatar: wavatar # gravatar style
+  guest_info: true # custom comment header nick,mail,link 
   pageSize: 10 # pagination size
 
 
@@ -549,7 +557,7 @@ firestore:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
@@ -614,6 +622,7 @@ local_search:
 
 # ---------------------------------------------------------------
 # Tags Settings
+# 标签设置
 # ---------------------------------------------------------------
 
 # External URL with BASE64 encrypt & decrypt.
@@ -654,7 +663,7 @@ tabs:
 
 # Use velocity to animate everything.
 motion:
-  enable: true
+  enable: false
   async: false
   transition:
     # Transition variants:
@@ -675,7 +684,7 @@ motion:
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: false
+pace: true
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce

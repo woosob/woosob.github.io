@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: WooSob
+title: WooSob Blog
 subtitle:
 description:
 keywords:
@@ -13,9 +13,9 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://woosob.github.io
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :category/:title/
 permalink_defaults:
 
 # Directory
@@ -31,6 +31,7 @@ skip_render:
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
+auto_spacing: true
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
@@ -41,7 +42,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
   
 # Home page setting
@@ -62,7 +63,7 @@ tag_map:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: YYYY MMM Do 
 time_format: HH:mm:ss
 
 # Pagination
